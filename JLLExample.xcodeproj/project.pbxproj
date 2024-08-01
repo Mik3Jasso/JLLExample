@@ -16,6 +16,10 @@
 		ADC2E3812C57DBB200CB7D67 /* JLLExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E3802C57DBB200CB7D67 /* JLLExampleTests.swift */; };
 		ADC2E38B2C57DBB200CB7D67 /* JLLExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E38A2C57DBB200CB7D67 /* JLLExampleUITests.swift */; };
 		ADC2E38D2C57DBB200CB7D67 /* JLLExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E38C2C57DBB200CB7D67 /* JLLExampleUITestsLaunchTests.swift */; };
+		ADC2E39F2C57DD6800CB7D67 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E39E2C57DD6800CB7D67 /* Employee.swift */; };
+		ADC2E3A22C57DEDB00CB7D67 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E3A12C57DEDB00CB7D67 /* APIManager.swift */; };
+		ADC2E3A52C5BE4F000CB7D67 /* EmployeeInfoCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC2E3A32C5BE4F000CB7D67 /* EmployeeInfoCellTableViewCell.swift */; };
+		ADC2E3A62C5BE4F000CB7D67 /* EmployeeInfoCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADC2E3A42C5BE4F000CB7D67 /* EmployeeInfoCellTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		ADC2E3862C57DBB200CB7D67 /* JLLExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLLExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC2E38A2C57DBB200CB7D67 /* JLLExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLLExampleUITests.swift; sourceTree = "<group>"; };
 		ADC2E38C2C57DBB200CB7D67 /* JLLExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLLExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ADC2E39E2C57DD6800CB7D67 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		ADC2E3A12C57DEDB00CB7D67 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		ADC2E3A32C5BE4F000CB7D67 /* EmployeeInfoCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeInfoCellTableViewCell.swift; sourceTree = "<group>"; };
+		ADC2E3A42C5BE4F000CB7D67 /* EmployeeInfoCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeInfoCellTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,8 @@
 		ADC2E3682C57DBAE00CB7D67 /* JLLExample */ = {
 			isa = PBXGroup;
 			children = (
+				ADC2E3A02C57DEC500CB7D67 /* APIManager */,
+				ADC2E39D2C57DD5500CB7D67 /* Entities */,
 				ADC2E3692C57DBAE00CB7D67 /* AppDelegate.swift */,
 				ADC2E36B2C57DBAE00CB7D67 /* SceneDelegate.swift */,
 				ADC2E36D2C57DBAE00CB7D67 /* ViewController.swift */,
@@ -106,6 +116,8 @@
 				ADC2E3722C57DBB100CB7D67 /* Assets.xcassets */,
 				ADC2E3742C57DBB100CB7D67 /* LaunchScreen.storyboard */,
 				ADC2E3772C57DBB100CB7D67 /* Info.plist */,
+				ADC2E3A32C5BE4F000CB7D67 /* EmployeeInfoCellTableViewCell.swift */,
+				ADC2E3A42C5BE4F000CB7D67 /* EmployeeInfoCellTableViewCell.xib */,
 			);
 			path = JLLExample;
 			sourceTree = "<group>";
@@ -125,6 +137,22 @@
 				ADC2E38C2C57DBB200CB7D67 /* JLLExampleUITestsLaunchTests.swift */,
 			);
 			path = JLLExampleUITests;
+			sourceTree = "<group>";
+		};
+		ADC2E39D2C57DD5500CB7D67 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				ADC2E39E2C57DD6800CB7D67 /* Employee.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		ADC2E3A02C57DEC500CB7D67 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				ADC2E3A12C57DEDB00CB7D67 /* APIManager.swift */,
+			);
+			path = APIManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +262,7 @@
 				ADC2E3732C57DBB100CB7D67 /* Assets.xcassets in Resources */,
 				ADC2E3762C57DBB100CB7D67 /* Base in Resources */,
 				ADC2E3712C57DBAE00CB7D67 /* Base in Resources */,
+				ADC2E3A62C5BE4F000CB7D67 /* EmployeeInfoCellTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADC2E3A22C57DEDB00CB7D67 /* APIManager.swift in Sources */,
 				ADC2E36E2C57DBAE00CB7D67 /* ViewController.swift in Sources */,
 				ADC2E36A2C57DBAE00CB7D67 /* AppDelegate.swift in Sources */,
+				ADC2E3A52C5BE4F000CB7D67 /* EmployeeInfoCellTableViewCell.swift in Sources */,
+				ADC2E39F2C57DD6800CB7D67 /* Employee.swift in Sources */,
 				ADC2E36C2C57DBAE00CB7D67 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
